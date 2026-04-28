@@ -1,6 +1,6 @@
 joblib
 numpy
-pandas2
+pandas
 plotly
 streamlit
 tensorflow

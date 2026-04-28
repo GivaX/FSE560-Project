@@ -14,8 +14,8 @@ os.environ["TF_NUM_INTEROP_THREADS"] = "1"
 # Caching model and scaler loading to speed up predictions
 @st.cache_resource
 def load_artifacts():
-    model  = keras.models.load_model("sp500_mlp_model_abl.keras")
-    scaler = joblib.load("sp500_scaler_abl.pkl")
+    model  = keras.models.load_model("sp500_mlp_model.keras")
+    scaler = joblib.load("sp500_scaler.pkl")
     return model, scaler
 
 # Feature engineering function - same as training
